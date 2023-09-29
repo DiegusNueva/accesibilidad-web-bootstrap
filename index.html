@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accesibilidad Web - Bootstrap</title>
-    <link rel="stylesheet" href="styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+
 </head>
 
 <body>
@@ -26,32 +27,61 @@
         implementado correctamente, debería ser perfectamente posible crear sitios web y aplicaciones con Bootstrap que
         cumplan con WCAG 2.0 (A/AA/AAA), Sección 508 y estándares y requisitos de accesibilidad similares.</p>
 
-    <h2>Marcado estructural</h2>
+    <div class="container">
+        <h2 class="h2">Marcado estructural</h2>
 
-    <p>El estilo y diseño de Bootstrap se pueden aplicar a una amplia gama de estructuras de marcado. Esta documentación
-        tiene como objetivo proporcionar a los desarrolladores ejemplos de mejores prácticas para demostrar el uso de
-        Bootstrap en sí e ilustrar el marcado semántico apropiado, incluidas las formas en que se pueden abordar
-        posibles problemas de accesibilidad.</p>
+        <p class="lead">
+            El estilo y diseño de Bootstrap se pueden aplicar a una amplia gama de estructuras de marcado. Esta
+            documentación
+            tiene como objetivo proporcionar a los desarrolladores ejemplos de mejores prácticas para demostrar el uso
+            de
+            Bootstrap en sí e ilustrar el marcado semántico apropiado, incluidas las formas en que se pueden abordar
+            posibles problemas de accesibilidad.
+        </p>
+    </div>
 
-    <h2>Componentes interactivos</h2>
+    <div class="container">
+        <h2 class="h2">Componentes interactivos</h2>
 
-    <p>Los componentes interactivos de Bootstrap, como cuadros de diálogo modales, menús desplegables e información
-        sobre herramientas personalizada, están diseñados para funcionar con usuarios táctiles, de mouse y de teclado.
-        Mediante el uso de roles y atributos WAI-ARIA relevantes, estos componentes también deben ser comprensibles y
-        operables utilizando tecnologías de asistencia (como lectores de pantalla).</p>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+            </div>
+            <br>
 
-    <p>Debido a que los componentes de Bootstrap están diseñados deliberadamente para ser bastante genéricos, es posible
-        que los autores necesiten incluir más funciones y atributos de ARIA, así como el comportamiento de JavaScript,
-        para transmitir con mayor precisión la naturaleza y funcionalidad precisas de su componente. Esto generalmente
-        se indica en la documentación.</p>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Escribe tu correo electrónico">
+            </div>
+            <br>
 
-    <h2>Contraste de color</h2>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        <br>
 
-    <p>La mayoría de los colores que actualmente componen la paleta predeterminada de Bootstrap (usados en todo el marco
-        para cosas como variaciones de botones, variaciones de alertas, indicadores de validación de formularios)
-        generan un contraste de color insuficiente (por debajo de la relación de contraste de color WCAG 2.0 recomendada
-        de 4,5:1) cuando se usan contra un fondo claro. Los autores deberán modificar/ampliar manualmente estos colores
-        predeterminados para garantizar relaciones de contraste de color adecuadas.</p>
+        <p class="lead">
+            Los componentes interactivos de Bootstrap, como formularios, botones y etiquetas, están diseñados para
+            funcionar
+            con usuarios táctiles, de mouse y de teclado. Mediante el uso de atributos y clases de Bootstrap, estos
+            componentes
+            también deben ser comprensibles y operables utilizando tecnologías de asistencia (como lectores de
+            pantalla).
+        </p>
+    </div>
+
+    <div class="container">
+        <h2 class="h2 text-primary">Contraste de color</h2>
+        <!-- Utilizamos la clase 'text-primary' para aplicar el color primario a la cabecera -->
+
+        <p class="lead">
+            La mayoría de los colores que actualmente componen la paleta predeterminada de Bootstrap (usados en todo el marco para
+            cosas como variaciones de botones, variaciones de alertas, indicadores de validación de formularios) generan un contraste
+            de color insuficiente (por debajo de la relación de contraste de color WCAG 2.0 recomendada de 4,5:1) cuando se usan
+            contra un fondo claro. Los autores deberán modificar/ampliar manualmente estos colores predeterminados para garantizar
+            relaciones de contraste de color adecuadas.
+        </p>
+    </div>
 
     <h2>Contenido visualmente oculto</h2>
 

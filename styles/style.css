@@ -1,0 +1,18 @@
+body{
+    padding: 5%;
+}
+
+:root {
+    --color-primario: #007bff; /* Color primario personalizado */
+    --color-fondo: #ffffff; /* Color de fondo personalizado */
+}
+
+/* Estilos personalizados con las variables de color */
+.btn-primary {
+    background-color: var(--color-primario);
+    border-color: var(--color-primario);
+}
+
+.bg-light {
+    background-color: var(--color-fondo);
+}
