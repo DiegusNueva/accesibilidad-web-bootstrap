@@ -3,6 +3,7 @@
  *
  * MIT licensed
  * Copyright (C) 2015 Tim Holman, http://tholman.com
+ * GitHub: https://github.com/tholman/elevator.js
  */
 
 /*********************************************
