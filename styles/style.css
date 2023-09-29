@@ -2,9 +2,10 @@ body{
     padding: 5%;
 }
 
+/* : es el elemento raíz del documento HTML, que es el elemento <html></html> */
 :root {
-    --color-primario: #007bff; /* Color primario personalizado */
-    --color-fondo: #ffffff; /* Color de fondo personalizado */
+    --color-primario: #93aac3; /* Color primario personalizado */
+    --color-fondo: #cd82c1; /* Color de fondo personalizado */
 }
 
 /* Estilos personalizados con las variables de color */
