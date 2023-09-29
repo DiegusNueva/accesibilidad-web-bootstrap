@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesibilidad Web - Bootstrap</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <h1>Accesibilidad a la WEB con Bootstrap</h1>
+    <p>Una breve descripción general de las características y limitaciones de Bootstrap para la creación de contenido
+        accesible.</p>
+    <p>Bootstrap proporciona un marco fácil de usar de estilos listos para usar, herramientas de diseño y componentes
+        interactivos, lo que permite a los desarrolladores crear sitios web y aplicaciones que son visualmente
+        atractivos, funcionalmente ricos y accesibles desde el primer momento.</p>
+
+    <h2>Descripción general y limitaciones</h2>
+
+    <p>La accesibilidad general de cualquier proyecto creado con Bootstrap depende en gran parte del marcado del autor,
+        el estilo adicional y las secuencias de comandos que hayan incluido. Sin embargo, siempre que se hayan
+        implementado correctamente, debería ser perfectamente posible crear sitios web y aplicaciones con Bootstrap que
+        cumplan con WCAG 2.0 (A/AA/AAA), Sección 508 y estándares y requisitos de accesibilidad similares.</p>
+
+    <h2>Marcado estructural</h2>
+
+    <p>El estilo y diseño de Bootstrap se pueden aplicar a una amplia gama de estructuras de marcado. Esta documentación
+        tiene como objetivo proporcionar a los desarrolladores ejemplos de mejores prácticas para demostrar el uso de
+        Bootstrap en sí e ilustrar el marcado semántico apropiado, incluidas las formas en que se pueden abordar
+        posibles problemas de accesibilidad.</p>
+
+    <h2>Componentes interactivos</h2>
+
+    <p>Los componentes interactivos de Bootstrap, como cuadros de diálogo modales, menús desplegables e información
+        sobre herramientas personalizada, están diseñados para funcionar con usuarios táctiles, de mouse y de teclado.
+        Mediante el uso de roles y atributos WAI-ARIA relevantes, estos componentes también deben ser comprensibles y
+        operables utilizando tecnologías de asistencia (como lectores de pantalla).</p>
+
+    <p>Debido a que los componentes de Bootstrap están diseñados deliberadamente para ser bastante genéricos, es posible
+        que los autores necesiten incluir más funciones y atributos de ARIA, así como el comportamiento de JavaScript,
+        para transmitir con mayor precisión la naturaleza y funcionalidad precisas de su componente. Esto generalmente
+        se indica en la documentación.</p>
+
+    <h2>Contraste de color</h2>
+
+    <p>La mayoría de los colores que actualmente componen la paleta predeterminada de Bootstrap (usados en todo el marco
+        para cosas como variaciones de botones, variaciones de alertas, indicadores de validación de formularios)
+        generan un contraste de color insuficiente (por debajo de la relación de contraste de color WCAG 2.0 recomendada
+        de 4,5:1) cuando se usan contra un fondo claro. Los autores deberán modificar/ampliar manualmente estos colores
+        predeterminados para garantizar relaciones de contraste de color adecuadas.</p>
+
+    <h2>Contenido visualmente oculto</h2>
+
+    <p>El contenido que debería estar oculto visualmente, pero permanecer accesible para tecnologías de asistencia, como
+        lectores de pantalla, se puede diseñar utilizando la clase exclusiva .sr. Esto puede resultar útil en
+        situaciones en las que también es necesario transmitir información visual adicional o señales (como el
+        significado denotado mediante el uso de colores) a usuarios no visuales.</p>
+
+    <p class="text-danger">
+        <span class="sr-only">Danger: </span>
+        This action is not reversible
+    </p>
+
+    <p>Para controles interactivos visualmente ocultos, como los tradicionales enlaces de "saltar", .sr-only se puede
+        combinar con la clase .sr-only-focusable. Esto asegurará que el control sea visible una vez enfocado (para
+        usuarios de teclados videntes).</p>
+
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+
+
+
+    <script src="scripts/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
